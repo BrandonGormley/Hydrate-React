@@ -1,38 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background: #2d99d8;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* =================LogoTitle Component Styles=============== */
+
+.main-logo {
+  color: whitesmoke;
+  position: relative;
+  bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-title {
+  position: relative;
+  bottom: 50px;
+  font-weight: bold;
+  font-size: 40px;
+  color: whitesmoke;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* =================MainText Component Styles=============== */
+
+.main-text {
+  font-size: 20px;
+  color: whitesmoke;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+/* =================Input & Button Component Styles=============== */
+
+.main-input {
+  margin: 40px 0;
+  padding: 10px 5px;
+  border-radius: 8px;
+  border: 2px solid #7fbadb;
+  font-size: 18px;
+  text-align: center;
+  color: #2d99d8;
+  font-weight: bold;
+  background: whitesmoke;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-button {
+  color: whitesmoke;
+  background: #2d99d8;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid whitesmoke;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+}
+
+.main-button:hover {
+  color: #2d99d8;
+  background: whitesmoke;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.water-total {
+  color: whitesmoke;
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+}
+
+/* =================SubText Component Styles=============== */
+
+.subtext {
+  color: whitesmoke;
+  position: relative;
+  font-size: 15px;
+  margin-top: 4rem;
+  width: 30%;
 }
